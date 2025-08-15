@@ -1,0 +1,40 @@
+.header{
+  background-color: dodgerblue;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 2em;
+  color: white;
+}
+
+.header-logo{
+  display: flex;
+  align-items: center;
+  font-size: inherit;
+}
+
+.header-nav{
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.username{
+  font-weight: bold;
+  font-size: inherit;
+}
