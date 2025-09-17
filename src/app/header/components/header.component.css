@@ -1,22 +1,27 @@
-.header{
-  background-color: dodgerblue;
+.header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1rem 0;
 }
 
-.header-container{
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  font-size: 2em;
-  color: white;
-}
-
-.header-logo{
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  font-size: inherit;
+  justify-content: space-between;
+  padding: 0 2rem;
 }
 
-.header-nav{
+.header-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #007bff;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.header-nav {
   display: flex;
   align-items: center;
 }
@@ -24,17 +29,23 @@
 .user-avatar {
   display: flex;
   align-items: center;
+  gap: 0.7rem;
+  background: #f9f9f9;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
-.user-avatar img{
+.user-avatar img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 10px;
+  border: 1px solid #eee;
 }
 
-.username{
-  font-weight: bold;
-  font-size: inherit;
+.username {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
 }
