@@ -1,0 +1,118 @@
+/* src/app/food-catalogue/components/food-catalogue.component.css */
+.restaurant-details {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.restaurant-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.restaurant-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.food-list h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.checkout-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.checkout-button:hover {
+  background: #0056b3;
+}
+
+.restaurant-details p {
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.food-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.food-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.food-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.food-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.food-price {
+  color: #007bff;
+  font-weight: 500;
+}
+
+.food-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.minus-button,
+.plus-button {
+  background: #e2e8f0;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.minus-button:hover,
+.plus-button:hover {
+  background: #cbd5e1;
+}
+
+.quantity-label {
+  min-width: 24px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}

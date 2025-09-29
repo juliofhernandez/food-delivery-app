@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Restaurant} from '@app/shared/model/Restaurant';
-import {RestaurantService} from '@app/restaurant-listing/service/restaurant.service';
+import {RestaurantService} from '@app/restaurant-listing/services/restaurant.service';
 import {Router} from '@angular/router';
 import {NgForOf} from '@angular/common';
 
@@ -44,10 +44,10 @@ export class RestaurantListingComponent {
   /**
    * This method is called when the user clicks on the button
    * It will navigate to the restaurant page with the id of the restaurant
-   * @param id - The id of the restaurant
+   * @param restaurantId - The id of the restaurant
    */
-  onButtonClick(id: number) {
-    this.router.navigate(['/food-catalogue',id])
+  onButtonClick(restaurantId: number) {
+    this.router.navigate(['/food-catalogue',restaurantId])
   }
 
   /**

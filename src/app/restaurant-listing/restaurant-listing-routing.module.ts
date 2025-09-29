@@ -10,8 +10,7 @@ const routes: Routes = [
   This is the entry point for the restaurant listing feature of the application.
    */
   {
-    path: '',
-    component: RestaurantListingComponent
+    path: '', component: RestaurantListingComponent
   }
 ];
 

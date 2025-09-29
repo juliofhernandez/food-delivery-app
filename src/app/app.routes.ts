@@ -1,4 +1,6 @@
  import { Routes } from '@angular/router';
+ import {RestaurantListingComponent} from '@app/restaurant-listing/components/restaurant-listing.component';
+ import {FoodCatalogueComponent} from '@app/food-catalogue/components/food-catalogue.component';
 
 export const routes: Routes = [
   /*
@@ -20,6 +22,10 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: () => import('./restaurant-listing/restaurant-listing.module').then(m => m.RestaurantListingModule)
+    component: RestaurantListingComponent
+  },
+  {
+    path: 'food-catalogue/:id',
+    component: FoodCatalogueComponent
   }
 ];
