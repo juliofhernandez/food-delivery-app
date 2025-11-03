@@ -43,14 +43,14 @@ export class FoodCatalogueComponent {
   }
 
   onCheckOut() {
-    this.foodItemCart;
     this.orderSummary = {
       foodItemList: [],
       restaurantDTO : null
     }
     this.orderSummary.foodItemList = this.foodItemCart;
     this.orderSummary.restaurantDTO = this.foodCatalogueResponse.restaurantDTO;
-    this.router.navigate(['/orderSummary'],{queryParams:{data: JSON.stringify(this.orderSummary)}});
+    // 'data' will be passed as query param to order-summary component
+    this.router.navigate(['/order-summary'],{queryParams:{data: JSON.stringify(this.orderSummary)}});
   }
 
   increment(food:any){
